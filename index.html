@@ -39,218 +39,176 @@
 
 <script>
 function mostrarInfo(producto){
-
-if(producto==="classicblossom"){
-alert(
-"Satisfyer Pro 2 Classic Blossom\n\n"+
-"• Tecnología Liquid Air\n"+
-"• Ondas de presión sin contacto\n"+
-"• Diseño romántico y elegante\n"+
-"• Estimulación suave e intensa\n"+
-"• Material premium\n"+
-"• Discreto y silencioso"
-);
-}
-
+    if(producto==="classicblossom"){
+        alert(
+        "Satisfyer Pro 2 Classic Blossom\n\n"+
+        "• Tecnología Liquid Air\n"+
+        "• Ondas de presión sin contacto\n"+
+        "• Diseño romántico y elegante\n"+
+        "• Estimulación suave e intensa\n"+
+        "• Material premium\n"+
+        "• Discreto y silencioso"
+        );
+    }
 }
 </script>
 
 <style>
-
-/* TODO TU CSS VA AQUÍ */
-
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(180deg,#0b0b12,#141426);
-color:white;
-}
-
-/* resto del CSS */
-
-</style>
-
-</head>
-
-<body>
-
-<!-- BANNER -->
-<!-- HEADER -->
-<!-- PRODUCTOS -->
-<!-- PAGOS -->
-<!-- ASESOR -->
-<!-- OPINIONES -->
-<!-- FOOTER -->
-
-
-
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(180deg,#0b0b12,#141426);
-color:white;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(180deg,#0b0b12,#141426);
+    color:white;
 }
 
 header{
-background:#000;
-text-align:center;
-padding:35px 20px;
-border-bottom:1px solid #222;
-}
-
-/* resto del CSS */
-
-</style>
-
-header{
-background:#000;
-text-align:center;
-padding:35px 20px;
-border-bottom:1px solid #222;
+    background:#000;
+    text-align:center;
+    padding:35px 20px;
+    border-bottom:1px solid #222;
 }
 
 .logo{
-width:320px;
-max-width:90%;
-display:block;
-margin:auto;
-margin-bottom:20px;
+    width:320px;
+    max-width:90%;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
 }
 
 .banner{
-background:linear-gradient(90deg,#ff4fd8,#7c5cff);
-padding:12px;
-text-align:center;
-font-weight:bold;
-color:black;
-font-size:14px;
+    background:linear-gradient(90deg,#ff4fd8,#7c5cff);
+    padding:12px;
+    text-align:center;
+    font-weight:bold;
+    color:black;
+    font-size:14px;
 }
 
 .hero{
-text-align:center;
-padding:20px;
+    text-align:center;
+    padding:20px;
 }
 
 .badges{
-font-size:14px;
-color:#ccc;
-margin-top:10px;
+    font-size:14px;
+    color:#ccc;
+    margin-top:10px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
 }
 
 .card{
-background:#141426;
-padding:20px;
-border-radius:12px;
-text-align:center;
-position:relative;
-transition:0.3s;
-border:1px solid #222;
+    background:#141426;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    position:relative;
+    transition:.3s;
+    border:1px solid #222;
 }
 
 .card:hover{
-transform:translateY(-5px);
-border:1px solid #444;
+    transform:translateY(-5px);
+    border:1px solid #444;
 }
 
 .tag{
-position:absolute;
-top:10px;
-left:10px;
-background:#ff4fd8;
-color:black;
-padding:4px 8px;
-font-size:12px;
-border-radius:6px;
-font-weight:bold;
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#ff4fd8;
+    color:black;
+    padding:4px 8px;
+    font-size:12px;
+    border-radius:6px;
+    font-weight:bold;
 }
 
 .img{
-height:220px;
-background:white;
-border-radius:8px;
-overflow:hidden;
-margin-bottom:10px;
+    height:220px;
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:10px;
 }
 
 .img img{
-width:100%;
-height:100%;
-object-fit:contain;
+    width:100%;
+    height:100%;
+    object-fit:contain;
 }
 
 .price{
-font-size:22px;
-font-weight:bold;
-color:#ff4fd8;
+    font-size:22px;
+    font-weight:bold;
+    color:#ff4fd8;
 }
 
 .old{
-text-decoration:line-through;
-color:#777;
-font-size:14px;
+    text-decoration:line-through;
+    color:#777;
+    font-size:14px;
 }
 
 button{
-margin-top:10px;
-background:linear-gradient(90deg,#ff4fd8,#7c5cff);
-border:none;
-padding:12px;
-width:100%;
-border-radius:8px;
-font-weight:bold;
-cursor:pointer;
-font-size:15px;
-color:black;
+    margin-top:10px;
+    background:linear-gradient(90deg,#ff4fd8,#7c5cff);
+    border:none;
+    padding:12px;
+    width:100%;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:15px;
+    color:black;
 }
 
 button:hover{
-opacity:0.9;
+    opacity:.9;
 }
 
 .payments{
-text-align:center;
-padding:20px;
-background:#111;
-margin:20px;
-border-radius:10px;
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin:20px;
+    border-radius:10px;
 }
 
 .asesor{
-text-align:center;
-background:#1a1a2e;
-margin:20px;
-padding:20px;
-border-radius:12px;
-border:1px solid #333;
+    text-align:center;
+    background:#1a1a2e;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #333;
 }
 
 footer{
-text-align:center;
-padding:20px;
-border-top:1px solid #222;
-color:#aaa;
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #222;
+    color:#aaa;
 }
 
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25d366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.4);
 }
-
 </style>
 
 </head>
