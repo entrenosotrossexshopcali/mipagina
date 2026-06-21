@@ -38,19 +38,38 @@
 </script>
 
 <script>
+
 function mostrarInfo(producto){
-    if(producto==="classicblossom"){
-        alert(
-        "Satisfyer Pro 2 Classic Blossom\n\n"+
-        "• Tecnología Liquid Air\n"+
-        "• Ondas de presión sin contacto\n"+
-        "• Diseño romántico y elegante\n"+
-        "• Estimulación suave e intensa\n"+
-        "• Material premium\n"+
-        "• Discreto y silencioso"
-        );
-    }
+
+if(producto==="classicblossom"){
+
+alert(
+"Satisfyer Pro 2 Classic Blossom\n\n"+
+"• Tecnología Liquid Air\n"+
+"• Ondas de presión sin contacto\n"+
+"• Diseño romántico y elegante\n"+
+"• Estimulación suave e intensa\n"+
+"• Material premium\n"+
+"• Discreto y silencioso"
+);
+
 }
+
+}
+
+function ampliarImagen(src){
+
+document.getElementById("imagenGrande").src=src;
+document.getElementById("lightbox").style.display="flex";
+
+}
+
+function cerrarImagen(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
 </script>
 
 <style>
@@ -209,11 +228,56 @@ footer{
     font-size:20px;
     box-shadow:0 0 10px rgba(0,0,0,.4);
 }
+
+ /* ===== LIGHTBOX ===== */
+
+.lightbox{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:99999;
+cursor:pointer;
+padding:20px;
+}
+
+.lightbox img{
+max-width:95%;
+max-height:95%;
+border-radius:15px;
+box-shadow:0 0 25px rgba(255,79,216,.6);
+animation:zoom .25s;
+}
+
+@keyframes zoom{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
 </style>
 
 </head>
+<div id="lightbox" class="lightbox" onclick="cerrarImagen()">
 
-<body>
+<img id="imagenGrande">
+
+</div>
+ 
+ <body>
 
 <div class="banner">
 🔥 ENTREGA HOY EN CALI • PAGO CONTRA ENTREGA • DISCRETO 🔥
@@ -1252,7 +1316,11 @@ padding-left:18px;
 <div class="tag">💖 LENCERÍA</div>
 
 <div class="img">
-<img src="Conjunto Tamara.png" alt="Conjunto Tamara">
+<img src="Conjunto Tamara.png"
+alt="Conjunto Tamara"
+style="cursor:zoom-in;"
+onclick="ampliarImagen(this.src)">
+
 </div>
 
 <h3>Conjunto Tamara</h3>
@@ -1277,7 +1345,11 @@ padding-left:18px;
 <div class="tag">🎀 LIGUERO</div>
 
 <div class="img">
-<img src="Conjunto Liguero Moños Fucsia.png" alt="Conjunto Liguero Moños Fucsia">
+<img src="Conjunto Liguero Moños Fucsia.png"
+alt="Conjunto Liguero Moños Fucsia"
+style="cursor:zoom-in;"
+onclick="ampliarImagen(this.src)">
+
 </div>
 
 <h3>Conjunto Liguero Moños Fucsia</h3>
@@ -1302,7 +1374,11 @@ padding-left:18px;
 <div class="tag">👩‍⚕️ DISFRAZ</div>
 
 <div class="img">
-<img src="Disfraz enfermera sexy.png" alt="Disfraz Enfermera">
+<img src="Disfraz enfermera sexy.png"
+alt="Disfraz Enfermera Sexy"
+style="cursor:zoom-in;"
+onclick="ampliarImagen(this.src)">
+
 </div>
 
 <h3>Disfraz Enfermera</h3>
@@ -1327,7 +1403,11 @@ padding-left:18px;
 <div class="tag">🐰 DISFRAZ</div>
 
 <div class="img">
-<img src="Disfraz conejita brillos.png" alt="Disfraz Conejita Brillos">
+<img src="Disfraz conejita brillos.png"
+alt="Disfraz Conejita Brillos"
+style="cursor:zoom-in;"
+onclick="ampliarImagen(this.src)">
+
 </div>
 
 <h3>Disfraz Conejita Brillos</h3>
@@ -1377,7 +1457,11 @@ padding-left:18px;
 <div class="tag">❤️ LIGUERO</div>
 
 <div class="img">
-<img src="Conjunto liguero Rojo.png" alt="Conjunto Liguero Rojo">
+<img src="Conjunto liguero Rojo.png"
+alt="Conjunto Liguero Rojo"
+style="cursor:zoom-in;"
+onclick="ampliarImagen(this.src)">
+
 </div>
 
 <h3>Conjunto Liguero Rojo</h3>
